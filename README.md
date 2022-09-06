@@ -1,50 +1,21 @@
 # ACM Research coding challenge (Fall 2022)
 
-Note: if it's getting down to the deadline (September 5th at 11:59 CT) and you don't think you will be able to finish your project on time, just [submit](http://apply.acmutd.co/research-coding-challenge) whatever you have! Also, you *can* technically turn it in after midnight – we will look at submissions tomorrow morning – but don't use that as an excuse to stay up late :P.
+Essentially, my idea was to create a graph that would display the ratings of all companies over time. For example: We would see a change in ratings for companies such as Mercedes and Ford and would be able to compare them. This would be helpful for consumers for help in decision making for purchasing a vehicle in regards to overall rating. This would also be helpful for sellers, because they would be able to sell the right vehicle and obtain insight into which vehicles consumers would rather own. 
 
-This semester's challenge is especially open-ended. [Here is a dataset](https://www.kaggle.com/datasets/chancev/carsforsale) on Kaggle called "CarsForSale". It contains data scraped from the online car marketplace Cars.com. Each row contains 25 pieces of information about a car's listing, such as its price, year, model, and color.
+The way I was working on designing this challenge is by taking data from the dataset (Year, Make, Consumer Rating) and plotting it into a line graph using matplotlib. More specifically, I would be able to display a line for each company and show their consumer rating over time using the three datapoints mentioned above. I started off by figuring out how to obtain data from a csv file, and a quick google search led me to importing csv. This is a library that makes it very easy to read these types of files. After that, I worked on accessing data and printing it (as a test). My focus then shifted to figuring out how to show all of this data on a graph. For that I used matplotlib. This was very new to me, but I managaed to get a successful line graph to show up. I was successfully able to print, store, and display data from the csv file, but organizing it was another challenge that I had yet to run into. My main issue came when using three data points. I wanted to take the average consumer ratings from each year from each company and display that on my graph. 
 
-The challenge is to do *something interesting* with the data. Can you find a pattern, answer a question, or create a visualization? In case nothing comes to mind, here are some ideas, with varying complexity:
+Taking the average turned out to be a complicated task. I attempted to solve this issue by using HashMaps, and different algorithms to sort my data into a clean way to display on the graph. I figured out how to isolate the data from each company, but getting to merge the years with the consumer rating averages was complex. I attempted for a decent amount of time, and I have submitted my last edited copy.  
 
-- What qualities about a car do buyers seem to value the most?
-- Make a graph to visualize the most popular car models over time.
-- What colors of cars are most expensive?
-- Do different brands try to appeal to people looking for different things?
-- Come up with your own algorithm to figure out how good of a deal a listing is and compare it to the one in the dataset (`DealType`).
-- Use [cluster analysis](https://en.wikipedia.org/wiki/Cluster_analysis) to group the cars into categories.
-- How do people's taste in cars differ between states?
-- Train a machine learning model to predict some aspect of a car based on other information from its listing.
+All the sources that I have listed may not be what I used in my final attempt, but what I used to research and try to figure out how to display the data correctly. 
 
-However, we strongly encourage you to come up with your own problem to solve!
 
-You can use any programming language, framework, or library you want, but we recommend [creating a notebook in Kaggle](https://www.kaggle.com/docs/notebooks) and using Python. This will run in your browser, interlaces code with documentation, allows you to import the CarsForSale dataset easily by pressing the "Add data" button, and gives you access to Python's high-quality, high-level libraries for working with data. [Learn more about data science in Python.](https://www.w3schools.com/datascience/ds_python.asp)
+Sources:
+https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/
+https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f
+https://stackoverflow.com/questions/22276066/how-to-plot-multiple-functions-on-the-same-figure-in-matplotlib
+https://www.geeksforgeeks.org/python-get-unique-values-list/
+https://www.digitalocean.com/community/tutorials/average-of-list-in-python
+https://www.w3schools.com/python/pandas/pandas_csv.asp
+https://swcarpentry.github.io/python-novice-gapminder/09-plotting/
 
-## How to submit your solution
-
-1. [Create a **public** fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of this repository and name it  `ACM-Research-coding-challenge-22F` (click the "Fork" button in the top right).
-
-2. Replace this README file with a description ([written in Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github)) of your solution. Regardless of your success, describe the problem you set out to solve and how you did it. Split it up into sections with headers, and, if relevant, include figures.
-
-3. Make sure to include all relevant files in your fork. If you made the project in a Kaggle notebook, click **File** → **Download Notebook** to download it as an `.ipynb` file.
-
-4. You may have to "clone" the fork you made to edit files locally on your computer and "push" them to GitHub. Learn how to do that [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
-
-4. Submit the link to your fork in this [form](http://apply.acmutd.co/research-coding-challenge).
-
-## No collaboration policy
-
-**You may not collaborate with anyone on this challenge.** You _are_ allowed (and encouraged) to use internet documentation. If you use existing code (either from Github, Stack Overflow, or other sources), **please cite your sources in the README**.
-
-## Timing
-
-Please don't spend too long on this project: **30 to 60 minutes** is reasonable. It's okay to put more time into your submission than that, but we don't expect you to get that much done; we really don't want this challenge to be a burden!
-
-If you're *completely new* to this kind of project, however, it will likely take you more than an hour. This is a *densely useful* project to go through (you will learn a lot), so we believe this is justified.
-
-## Assessment criteria
-
-Submissions will be evaluated holistically, in combination with the rest of your application. We will consider your effort, use of external resources, how you approached the problem, and presentation, among other considerations.
-
-## Support and questions
-
-Feel free to ask for clarifications in the #research-qna channel in the [ACM UTD Discord server](https://discord.gg/nJxRdKdG4d)! You can also directly message Roman Hauksson on Discord: `RomanHauksson#3458`.
+Thank you for reading.
